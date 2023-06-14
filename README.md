@@ -9,7 +9,7 @@ By Alfarobby27
 	```bash
 	git clone https://github.com/Alfarobby27/Belanjago-Seller && cd Belanjago-Seller
 	```
-3. Pindahkan file Belanjago-Seller ke direktori xampp dibawah ini.
+3. Pindahkan folder Belanjago-Seller ke direktori xampp dibawah ini.
 	```bash
 	C:\xampp\htdocs
 	```
