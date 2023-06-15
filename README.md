@@ -19,9 +19,9 @@ By Alfarobby27
 	localhost/Belanjago-Seller
 	```
 ## Fitur
-- [x] Menampilkan Daftar Asset
-- [x] Menambah Data Asset
-- [x] Mengubah Data Asset
-- [x] Menghapus Data Asset
+- [x] Menampilkan Daftar Produk
+- [x] Menambah Data Produk
+- [x] Mengubah Data Produk
+- [x] Menghapus Data Produk
 
 
