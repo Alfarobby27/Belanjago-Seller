@@ -23,5 +23,6 @@ By Alfarobby27
 - [x] Menambah Data Produk
 - [x] Mengubah Data Produk
 - [x] Menghapus Data Produk
+- [x] Cari Data Produk
 
 
