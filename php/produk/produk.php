@@ -18,9 +18,18 @@ if ( isset($_POST["cari"]) ) {
     $marketplace = cari($_POST["keyword"]);
 }
 
+//format Rupiah
 function formatRupiah($harga) {
   return 'Rp ' . number_format($harga, 0, ',', '.');
 }
+
+//pagination
+$jumlahDataPerHalaman = 2;
+$jumlahData = count(query("SELECT * FROM marketplace"));
+$jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
+$halamanAktif = ( isset($_GET["p"]) ) ? $_GET["p"] : 1;
+$awalData = ( $jumlahDataPerHalaman * $halamanAktif ) - $jumlahDataPerHalaman;
+$marketplace = query("SELECT * FROM marketplace LIMIT $awalData, $jumlahDataPerHalaman");
 
 ?>
 
@@ -68,7 +77,7 @@ function formatRupiah($harga) {
     </nav>
     <!-- NavBar End-->
 
-    <!--Produk saya BEGIN-->
+    <!--Produk saya Begin-->
       <div class="wrapper">
           <h1 class="title">Produk saya</h1>
           <form action="" method="post" class="myForm">
@@ -107,9 +116,37 @@ function formatRupiah($harga) {
             <?php endforeach; ?>
           </table>
       </div>
-      <!--Produk saya End--> 
+      <!--Produk saya End-->
+      <!-- Pagination Begin -->
+      <div class="pagination">
+          <?php if( $halamanAktif > 1 ) : ?>
+            <div class="page">
+                <a href="?p=<?= $halamanAktif - 1; ?>"  class="page-link" >&laquo;</a>
+            </div>
+          <?php endif; ?>
 
-    <!--Footer End-->
+          <?php for( $i = 1; $i <= $jumlahHalaman; $i++ ) : ?>
+              <?php if( $i == $halamanAktif ) : ?>
+                <div class="page">
+                   <a href="?p=<?= $i; ?>" class="page-link" style="background-color: #8c623f;"><?= $i; ?></a>
+                </div>
+              <?php else : ?>
+                <div class="page">
+                    <a href="?p=<?= $i; ?>" class="page-link"><?= $i; ?></a>
+                </div>
+              <?php endif; ?>
+          <?php endfor; ?>
+          
+          <?php if( $halamanAktif < $jumlahHalaman ) : ?>
+              <div class="page">
+                  <a href="?p=<?= $halamanAktif + 1; ?>"  class="page-link" >&raquo;</a>
+              </div>
+          <?php endif; ?>
+      </div>        
+      <!-- Pagination End -->
+
+
+      <!--Footer Begin-->
       <div class="footer">
           <h1 class="h1-footer"><span class="span1">&copy;</span> Alfarobby27<span> 2023<span></span></h1>
           <h2 id="clock"></h2>
