@@ -22,7 +22,7 @@ Alfarobby27
 5.  Create MySQL Database
     - Open Command prompt
     - Type below then enter
-      	``bash
+      	```bash
           cd ...
 	```
     - Repeat cd .. then enter, until you are on the path C:\\
