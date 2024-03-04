@@ -22,14 +22,10 @@ Alfarobby27
 5.  Create MySQL Database
     - Open Command prompt
       
-    - Type below then enter
+    - Type below then enter. repeat once enter, until you are on the path C
       	```bash
           cd ..
 	```
- 
-    - Repeat cd .. then enter,
-      until you are on the path C
- 
     - If you have typed below
         ```bash
           cd \xampp\mysql\bin
