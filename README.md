@@ -27,7 +27,7 @@ Alfarobby27
 	```
     - Repeat cd .. then enter, until you are on the path C:\\
     - If you have typed below
-        ```bash/
+        ```bash
           cd \xampp\mysql\bin
 	```
     - Make sure you are already on this cmd path.
