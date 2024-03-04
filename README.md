@@ -19,11 +19,54 @@ Alfarobby27
 
 4. Open the XAMPP application that you have downloaded. Click start on Apache and MySQL
 
-5. If so, open your browser and paste the below into your browser.
+5.  Create MySQL Database
+    - Open Command prompt
+    - Type below then enter
+      	``bash
+          cd ...
+	```
+    - Repeat cd .. then enter, until you are on the path C:\\
+    - If you have typed below
+        ```bash/
+          cd \xampp\mysql\bin
+	```
+    - Make sure you are already on this cmd path.
+      C:\\xampp\mysql\bin\
+    - Then type
+       ```bash
+         mysql -u root
+       ```
+    - Then type below to create a database
+       ```bash
+         CREATE DATABASE phpdasar;
+         use phpdasar;
+       ```
+    - Then create a marketplace table
+       ```bash
+         CREATE TABLE marketplace(
+         id int primary key auto_increment,
+         name varchar(50),
+         image varchar(225),
+         stock int
+         );
+       ```
+    - Then create a user table
+       ```bash
+         CREATE TABLE user(
+         id int primary key auto_increment,
+         username varchar(50),
+         password varchar(225)
+         );
+       ```
+   - Make sure the database that is created is written according to the above
+
+
+6. If so, open your browser and paste the below into your browser.
 	```bash
 	localhost/Belanjago-Seller
 	```
-
+7. Make sure you register first, before logging in
+   
 ## Features 
 - [X] Login, Logout and Register Account
 - [x] Display Product List
