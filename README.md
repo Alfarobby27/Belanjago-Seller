@@ -21,26 +21,32 @@ Alfarobby27
 
 5.  Create MySQL Database
     - Open Command prompt
+      
     - Type below then enter
       	```bash
           cd ..
 	```
-    - Repeat cd .. then enter, until you are on the path C:\\
+ 
+    - Repeat cd .. then enter, until you are on the path C:\
+ 
     - If you have typed below
         ```bash
           cd \xampp\mysql\bin
 	```
     - Make sure you are already on this cmd path.
       C:\\xampp\mysql\bin\
+      
     - Then type
        ```bash
          mysql -u root
        ```
+       
     - Then type below to create a database
        ```bash
          CREATE DATABASE phpdasar;
          use phpdasar;
        ```
+       
     - Then create a marketplace table
        ```bash
          CREATE TABLE marketplace(
@@ -50,6 +56,7 @@ Alfarobby27
          stock int
          );
        ```
+       
     - Then create a user table
        ```bash
          CREATE TABLE user(
@@ -58,6 +65,7 @@ Alfarobby27
          password varchar(225)
          );
        ```
+       
    - Make sure the database that is created is written according to the above
 
 
