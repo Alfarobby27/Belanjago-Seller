@@ -23,7 +23,7 @@ Alfarobby27
     - Open Command prompt
     - Type below then enter
       	```bash
-          cd ...
+          cd ..
 	```
     - Repeat cd .. then enter, until you are on the path C:\\
     - If you have typed below
