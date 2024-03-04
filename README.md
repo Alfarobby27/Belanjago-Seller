@@ -26,10 +26,13 @@ Alfarobby27
       	```bash
           cd ..
 	```
+ 
     - If you have typed below
+ 
         ```bash
           cd \xampp\mysql\bin
 	```
+ 
     - Make sure you are already on this cmd path.
       C:\\xampp\mysql\bin\
       
