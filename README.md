@@ -27,7 +27,8 @@ Alfarobby27
           cd ..
 	```
  
-    - Repeat cd .. then enter, until you are on the path C:\
+    - Repeat cd .. then enter,
+      until you are on the path C
  
     - If you have typed below
         ```bash
