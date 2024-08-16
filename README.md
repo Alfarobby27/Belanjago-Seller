@@ -54,7 +54,7 @@ Alfarobby27
          gambar varchar(225),
          nama varchar(225),
          harga double, 
-         stock int
+         stok int
          );
        ```
        
