@@ -51,8 +51,9 @@ Alfarobby27
        ```bash
          CREATE TABLE marketplace(
          id int primary key auto_increment,
-         name varchar(50),
-         image varchar(225),
+         gambar varchar(225),
+         nama varchar(225),
+         harga double, 
          stock int
          );
        ```
@@ -61,7 +62,7 @@ Alfarobby27
        ```bash
          CREATE TABLE user(
          id int primary key auto_increment,
-         username varchar(50),
+         username varchar(225),
          password varchar(225)
          );
        ```
