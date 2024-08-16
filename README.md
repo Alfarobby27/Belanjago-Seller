@@ -25,13 +25,13 @@ Alfarobby27
     - Type below then enter. repeat once enter, until you are on the path C
       	```bash
           cd ..
-	```
+	      ```
  
     - If you have typed below
  
         ```bash
           cd \xampp\mysql\bin
-	```
+	       ```
  
     - Make sure you are already on this cmd path.
       C:\\xampp\mysql\bin\
